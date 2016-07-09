@@ -1,0 +1,38 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "Simple Todo App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jesus-Gonzalez/ReactTodoApp.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "webpack",
+    "sample"
+  ],
+  "author": "Jesús González",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jesus-Gonzalez/ReactTodoApp/issues"
+  },
+  "homepage": "https://github.com/Jesus-Gonzalez/ReactTodoApp#readme",
+  "dependencies": {
+    "react": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.5.2",
+    "redux": "^3.5.2",
+    "webpack": "^1.13.1"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
