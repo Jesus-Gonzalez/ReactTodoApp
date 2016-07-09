@@ -15,12 +15,8 @@ I will be using the following components:
 * Babel
 * Bootstrap without jQuery
 
-# Testing
-
-Yes, some testing will be set-up as well, but I haven't planned it yet.
-
 # "That's all Folks!"
 
-Have a good, non bugged, day,
+Have a good, non-bugged, day,
 
 Jesús
