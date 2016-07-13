@@ -1,2 +1,5 @@
+# Ignore .gitignore itself
+# .gitignore
+
 # Ignore node_modules directory
 node_modules/
