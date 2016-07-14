@@ -4,7 +4,8 @@
   "description": "Simple Todo App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "./node_modules/.bin/webpack-dev-server --content-base dist/ --progress --watch --colors --config webpack.config.dev.js",
+    "compile": "NODE_ENV=production ./node_modules/.bin/webpack && echo \"Built to dist/app.js\""
   },
   "repository": {
     "type": "git",
