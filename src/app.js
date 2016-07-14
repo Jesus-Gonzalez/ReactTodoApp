@@ -19,9 +19,6 @@ import TodosList from './components/Todos.jsx';
 // Create the store
 const store = createStore(todoApp);
 
-// Development purpose only
-window.store = store;
-
 render(
         <Provider store={store}>
           <Router history={hashHistory}>
