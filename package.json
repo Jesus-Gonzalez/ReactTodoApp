@@ -4,8 +4,8 @@
   "description": "Simple Todo App",
   "main": "index.js",
   "scripts": {
-    "dev": "./node_modules/.bin/webpack-dev-server --content-base dist/ --progress --watch --colors --config webpack.config.dev.js",
-    "compile": "NODE_ENV=production ./node_modules/.bin/webpack && echo \"Built to dist/app.js\""
+    "start:dev": "./node_modules/.bin/webpack-dev-server --content-base dist/ --progress --watch --colors --config webpack.config.dev.js",
+    "build": "NODE_ENV=production ./node_modules/.bin/webpack && echo \"Built to dist/app.js\""
   },
   "repository": {
     "type": "git",
