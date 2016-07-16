@@ -10,7 +10,7 @@ export default
       switch (action.type)
       {
         case ADD_TODO:
-          const newState = Object.assign({}, { todos: state.todos.concat({ id: action.id, text: action.text }) });
+          const newState = Object.assign({}, state, { todos: state.todos.concat({ id: action.id, text: action.text }) });
 
           if (typeof window.localStorage === 'undefined')
           {
