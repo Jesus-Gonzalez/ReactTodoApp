@@ -14,7 +14,10 @@ export default class CreateTodoForm extends React.Component
   {
     v.preventDefault();
     const input = v.target.todo;
-    this.props.onSubmit(input.value);
+    if (input.value.length === 0)
+      return;
+
+    this.props.onCreateTodoFormSubmit(input.value);
     input.value = '';
     return false;
   }
