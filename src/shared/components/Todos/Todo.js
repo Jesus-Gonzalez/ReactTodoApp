@@ -1,7 +1,17 @@
 import React from 'react';
 
-export default ({ id, text }) => (
+const Todo = ({ id, text }) => (
   <li id={id}>
-    { text }
+    {text}
   </li>
 );
+
+Todo.propTypes = {
+  id: React.PropTypes.oneOfType([
+    React.PropTypes.string,
+    React.PropTypes.number,
+  ]).isRequired,
+  text: React.PropTypes.string.isRequired,
+};
+
+export default Todo;

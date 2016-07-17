@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 
 import store from '../shared/store/configureStore';
 
-import AppRoutes from '../shared/routes/index'
+import AppRoutes from '../shared/routes/index';
 
 render(
   <Provider store={store}>

@@ -3,10 +3,16 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
-export default ({ children }) => (
+const Main = ({ children }) => (
   <div>
-    <Header/>
-      { children }
-    <Footer/>
+    <Header />
+      {children}
+    <Footer />
   </div>
 );
+
+Main.propTypes = {
+  children: React.PropTypes.node.isRequired,
+};
+
+export default Main;

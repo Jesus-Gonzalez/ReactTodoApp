@@ -1,34 +1,31 @@
 import React from 'react';
 
-export default class CreateTodoForm extends React.Component
+class CreateTodoForm extends React.Component
 {
-  constructor()
-  {
+  constructor() {
     super();
-    this.state = { text: '' }
+    this.state = { text: '' };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleSubmit(v)
-  {
+  handleSubmit(v) {
     v.preventDefault();
+
     const input = v.target.todo;
-    if (input.value.length === 0)
+    if (input.value.length === 0) {
       return;
+    }
 
     this.props.onCreateTodoFormSubmit(input.value);
     input.value = '';
-    return false;
   }
 
-  handleInputChange(v)
-  {
+  handleInputChange(v) {
     this.state.text = v.target.value;
   }
 
-  render()
-  {
+  render() {
     return (
       <form onSubmit={this.handleSubmit}>
         <input name="todo" onChange={this.handleInputChange} />
@@ -37,3 +34,9 @@ export default class CreateTodoForm extends React.Component
     );
   }
 }
+
+CreateTodoForm.propTypes = {
+  onCreateTodoFormSubmit: React.PropTypes.func.isRequired,
+};
+
+export default CreateTodoForm;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Todo from './Todo';
 
-export default ({ todos }) => (
+const TodosList = ({ todos }) => (
   <ul>
     {
       todos.map(todo => (
@@ -11,3 +11,12 @@ export default ({ todos }) => (
     }
   </ul>
 );
+
+TodosList.propTypes = {
+  todos: React.PropTypes.arrayOf(React.PropTypes.shape({
+    id: React.PropTypes.any.isRequired,
+    text: React.PropTypes.string.isRequired,
+  }).isRequired).isRequired,
+};
+
+export default TodosList;

@@ -12,8 +12,8 @@ export function addTodo(id, text) {
       id,
       text,
     },
-  }
-};
+  };
+}
 
 export function completeTodo(id) {
   return {
@@ -21,14 +21,14 @@ export function completeTodo(id) {
     payload: {
       id,
     },
-  }
-};
+  };
+}
 
 export function deleteTodo(id) {
   return {
     type: DELETE_TODO,
     payload: {
       id,
-    }
-  }
-};
+    },
+  };
+}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => (
   <footer>
-    <hr/>
+    <hr />
     <small>Jesús González - 2016</small>
   </footer>
 );
