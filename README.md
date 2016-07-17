@@ -21,9 +21,9 @@ I will be using the following modules:
 Be sure you have NodeJS and NPM installed.
 In the root directory (where package.json resides), run `npm install` in order to resolve and download project dependencies.
 
-Then you can run it in development mode: `npm run dev` and browse to [http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-dev-server/)
+Then you can run it in development mode: `npm run start:dev` and browse to [http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-dev-server/)
 
-You can also compile the project running `npm run compile`. It will compile the project into `dist/` directory as an `app.js` file. Open `dist/index.html` to browse the result.
+You can also compile the project running `npm run build`. It will compile the project into `dist/` directory as an `app.js` file. Open `dist/index.html` to browse the result.
 
 ## Something else?
 
